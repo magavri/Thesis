@@ -7,6 +7,7 @@ public class DisableSprites : MonoBehaviour
 {
     //score canvas
     public GameObject endMenu;
+    //left hand sprite
     public GameObject leftHand;
     //right hand sprite
     public GameObject rightHand;
@@ -28,7 +29,12 @@ public class DisableSprites : MonoBehaviour
             }
         }
     }
-    
+    /// <summary>
+    /// Enables game object
+    /// </summary>
+    /// <param name="seconds"></param>
+    /// <param name="obj"></param>
+    /// <returns></returns>
     IEnumerator EnableAfterSeconds(int seconds, GameObject obj)
     {
         yield return new WaitForSeconds(seconds);
