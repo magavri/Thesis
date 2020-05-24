@@ -19,4 +19,9 @@ public class LevelChanger : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         animator.SetTrigger("FadeOut");
     }
+    
+    public void OnFadeComplete()
+    {
+        SceneManager.LoadScene(levelToLoad);
+    }
 }
