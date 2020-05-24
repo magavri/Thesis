@@ -43,11 +43,11 @@ public class Explode : MonoBehaviour
             Debug.Log("hit");
             if(other.gameObject.tag.Contains("Left"))
             {
-                FindObjectOfType<Score>().ScoreLeft();
+                FindObjectOfType<Score>().ScoreRight();
             }
             else
             {
-                FindObjectOfType<Score>().ScoreRight();
+                FindObjectOfType<Score>().ScoreLeft();
             }
             Explosion();
             Physics.IgnoreLayerCollision(0, 9);

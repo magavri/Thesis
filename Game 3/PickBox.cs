@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.TestTools;
+﻿using UnityEngine;
 
 public class PickBox : MonoBehaviour
 {

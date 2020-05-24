@@ -1,17 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
+﻿using UnityEngine;
+
 
 public class Scaling : MonoBehaviour
 {
+    /// <summary>
+    /// Changing the scale of the object
+    /// </summary>
     public void ScaleUp()
     {
         transform.localScale = new Vector3(1.05f, 1.05f, 1.05f);
-        Debug.Log("yooo");
     }
 
+    /// <summary>
+    /// Changing the scale of the object
+    /// </summary>
     public void ScaleDown()
     {
         transform.localScale = new Vector3(1f, 1f, 1f);

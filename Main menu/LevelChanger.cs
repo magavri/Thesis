@@ -1,11 +1,12 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelChanger : MonoBehaviour
 {
+    //animator with scene change
     public Animator animator;
+    //loading level index
     private int levelToLoad;
     void Update()
     {
@@ -17,10 +18,5 @@ public class LevelChanger : MonoBehaviour
         levelToLoad = levelIndex;
         yield return new WaitForSeconds(seconds);
         animator.SetTrigger("FadeOut");
-    }
-
-    public void OnFadeComplete()
-    {
-        SceneManager.LoadScene(levelToLoad);
     }
 }
