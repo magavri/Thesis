@@ -128,7 +128,7 @@ public class DataCollection : MonoBehaviour
     }
 
    /// <summary>
-   /// Collecting data for the fourth hand
+   /// Collecting data for the fourth game
    /// </summary>
     public static void FourthGameData()
     {
