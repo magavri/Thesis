@@ -1,1 +1,1 @@
-# Serioud game for shoulder ability imrovement
+# Serioud game for shoulder ability improvement
